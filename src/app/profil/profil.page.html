@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Profil</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div>
+    <p>BIENVENUE <br>{{user?.nom}} {{user?.prenom}}</p>
+  </div>
+  <div>
+    <ion-item>
+      <ion-label ><strong>Nom : </strong>{{user?.nom}}</ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-label ><strong>Prénom : </strong> {{user?.prenom}}</ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-label ><strong>E-mail : </strong>{{user?.email}}</ion-label>
+    </ion-item>
+
+  </div>
+</ion-content>
